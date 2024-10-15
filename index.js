@@ -20,10 +20,10 @@ const upload = multer({ storage: storage });
 
 // MySQL Connection Setup
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',  // Update to your MySQL password
-  database: 'anonymous_reports'
+  host: process.env.host,
+  user:  process.env.user',
+  password: process.env.password,  // Update to your MySQL password
+  database:process.env.database'
 });
 
 // Connect to the database
