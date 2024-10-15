@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous Reporting App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Anonymous Reporting App</h1>
+    <form id="reportForm">
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="" disabled selected>Select a category</option>
+        <option value="harassment">Harassment</option>
+        <option value="bullying">Bullying</option>
+        <option value="fraud">Fraud</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="description">Description of the Incident:</label>
+      <textarea id="description" name="description" placeholder="Describe the incident..." required></textarea>
+
+      <label for="attachment">Attach a File (optional):</label>
+      <input type="file" id="attachment" name="attachment">
+
+      <button type="submit">Submit Report</button>
+    </form>
+
+    <div id="message" class="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
