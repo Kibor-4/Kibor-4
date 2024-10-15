@@ -21,8 +21,8 @@ const upload = multer({ storage: storage });
 // MySQL Connection Setup
 const db = mysql.createConnection({
   host: process.env.host,
-  user:  process.env.user',
-  password: process.env.password,  // Update to your MySQL password
+  user:  process.env.user,
+  password: process.env.password,
   database:process.env.database'
 });
 
